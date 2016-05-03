@@ -17,9 +17,12 @@
 		B27A60C71CD84D7900B21F0E /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A60C11CD84D7900B21F0E /* NSLayoutConstraint+PureLayout.m */; };
 		B27A60D11CD87B5E00B21F0E /* SideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27A60D01CD87B5E00B21F0E /* SideMenuController.swift */; };
 		B27A60D31CD87DC000B21F0E /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27A60D21CD87DC000B21F0E /* MenuViewController.swift */; };
-		B27A60D61CD8840A00B21F0E /* DoctorProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27A60D51CD8840A00B21F0E /* DoctorProfileViewController.swift */; };
 		B27A60DA1CD8855800B21F0E /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27A60D91CD8855800B21F0E /* Engine.swift */; };
 		B27A60DE1CD890E400B21F0E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27A60DD1CD890E400B21F0E /* BaseViewController.swift */; };
+		B2927DF71CD8E4CB004696F9 /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = B2927DF61CD8E4CB004696F9 /* avatar.png */; };
+		B2927DFA1CD8F1A9004696F9 /* DoctorProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2927DF81CD8F1A9004696F9 /* DoctorProfileVC.swift */; };
+		B2927DFB1CD8F1A9004696F9 /* DoctorProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2927DF91CD8F1A9004696F9 /* DoctorProfileVC.xib */; };
+		B2927DFF1CD90E5F004696F9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2927DFE1CD90E5F004696F9 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,9 +45,13 @@
 		B27A60C41CD84D7900B21F0E /* PureLayoutDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayoutDefines.h; sourceTree = "<group>"; };
 		B27A60D01CD87B5E00B21F0E /* SideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuController.swift; sourceTree = "<group>"; };
 		B27A60D21CD87DC000B21F0E /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		B27A60D51CD8840A00B21F0E /* DoctorProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorProfileViewController.swift; sourceTree = "<group>"; };
 		B27A60D91CD8855800B21F0E /* Engine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
 		B27A60DD1CD890E400B21F0E /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		B2927DF61CD8E4CB004696F9 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
+		B2927DF81CD8F1A9004696F9 /* DoctorProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorProfileVC.swift; sourceTree = "<group>"; };
+		B2927DF91CD8F1A9004696F9 /* DoctorProfileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DoctorProfileVC.xib; sourceTree = "<group>"; };
+		B2927DFC1CD90904004696F9 /* TestUI.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TestUI.playground; sourceTree = "<group>"; };
+		B2927DFE1CD90E5F004696F9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2927DFF1CD90E5F004696F9 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +92,7 @@
 				B27A60D81CD8852500B21F0E /* Engine */,
 				B27A60CD1CD8595E00B21F0E /* Extension */,
 				B27A60B91CD84CA400B21F0E /* ThirdParty */,
+				B2927DFD1CD90E45004696F9 /* Frameworks */,
 				B27A60B81CD84C3400B21F0E /* Supporting Files */,
 			);
 			path = SK;
@@ -92,11 +101,13 @@
 		B27A60B81CD84C3400B21F0E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B2927DF51CD8E4BA004696F9 /* Resources */,
 				B27A60BB1CD84D7900B21F0E /* SK-Bridging-Header.h */,
 				B27A60AA1CD84C1900B21F0E /* Main.storyboard */,
 				B27A60AF1CD84C1900B21F0E /* LaunchScreen.storyboard */,
 				B27A60AD1CD84C1900B21F0E /* Assets.xcassets */,
 				B27A60B21CD84C1900B21F0E /* Info.plist */,
+				B2927DFC1CD90904004696F9 /* TestUI.playground */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -145,7 +156,8 @@
 		B27A60D71CD8841800B21F0E /* DoctorProfileVC */ = {
 			isa = PBXGroup;
 			children = (
-				B27A60D51CD8840A00B21F0E /* DoctorProfileViewController.swift */,
+				B2927DF81CD8F1A9004696F9 /* DoctorProfileVC.swift */,
+				B2927DF91CD8F1A9004696F9 /* DoctorProfileVC.xib */,
 			);
 			name = DoctorProfileVC;
 			sourceTree = "<group>";
@@ -156,6 +168,22 @@
 				B27A60D91CD8855800B21F0E /* Engine.swift */,
 			);
 			name = Engine;
+			sourceTree = "<group>";
+		};
+		B2927DF51CD8E4BA004696F9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B2927DF61CD8E4CB004696F9 /* avatar.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B2927DFD1CD90E45004696F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2927DFE1CD90E5F004696F9 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,7 +244,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2927DF71CD8E4CB004696F9 /* avatar.png in Resources */,
 				B27A60B11CD84C1900B21F0E /* LaunchScreen.storyboard in Resources */,
+				B2927DFB1CD8F1A9004696F9 /* DoctorProfileVC.xib in Resources */,
 				B27A60AE1CD84C1900B21F0E /* Assets.xcassets in Resources */,
 				B27A60AC1CD84C1900B21F0E /* Main.storyboard in Resources */,
 			);
@@ -235,7 +265,7 @@
 				B27A60C71CD84D7900B21F0E /* NSLayoutConstraint+PureLayout.m in Sources */,
 				B27A60D31CD87DC000B21F0E /* MenuViewController.swift in Sources */,
 				B27A60A91CD84C1900B21F0E /* ViewController.swift in Sources */,
-				B27A60D61CD8840A00B21F0E /* DoctorProfileViewController.swift in Sources */,
+				B2927DFA1CD8F1A9004696F9 /* DoctorProfileVC.swift in Sources */,
 				B27A60C51CD84D7900B21F0E /* ALView+PureLayout.m in Sources */,
 				B27A60DA1CD8855800B21F0E /* Engine.swift in Sources */,
 				B27A60A71CD84C1900B21F0E /* AppDelegate.swift in Sources */,
@@ -395,6 +425,7 @@
 				B27A60B71CD84C1900B21F0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
