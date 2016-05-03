@@ -17,6 +17,9 @@
 		B27A60C71CD84D7900B21F0E /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A60C11CD84D7900B21F0E /* NSLayoutConstraint+PureLayout.m */; };
 		B27A60D11CD87B5E00B21F0E /* SideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27A60D01CD87B5E00B21F0E /* SideMenuController.swift */; };
 		B27A60D31CD87DC000B21F0E /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27A60D21CD87DC000B21F0E /* MenuViewController.swift */; };
+		B27A60D61CD8840A00B21F0E /* DoctorProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27A60D51CD8840A00B21F0E /* DoctorProfileViewController.swift */; };
+		B27A60DA1CD8855800B21F0E /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27A60D91CD8855800B21F0E /* Engine.swift */; };
+		B27A60DE1CD890E400B21F0E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27A60DD1CD890E400B21F0E /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,9 @@
 		B27A60C41CD84D7900B21F0E /* PureLayoutDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayoutDefines.h; sourceTree = "<group>"; };
 		B27A60D01CD87B5E00B21F0E /* SideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuController.swift; sourceTree = "<group>"; };
 		B27A60D21CD87DC000B21F0E /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		B27A60D51CD8840A00B21F0E /* DoctorProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorProfileViewController.swift; sourceTree = "<group>"; };
+		B27A60D91CD8855800B21F0E /* Engine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
+		B27A60DD1CD890E400B21F0E /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +78,10 @@
 			isa = PBXGroup;
 			children = (
 				B27A60A61CD84C1900B21F0E /* AppDelegate.swift */,
-				B27A60A81CD84C1900B21F0E /* ViewController.swift */,
+				B27A60DD1CD890E400B21F0E /* BaseViewController.swift */,
+				B27A60D71CD8841800B21F0E /* DoctorProfileVC */,
 				B27A60C81CD84DC200B21F0E /* SideMenuVC */,
+				B27A60D81CD8852500B21F0E /* Engine */,
 				B27A60CD1CD8595E00B21F0E /* Extension */,
 				B27A60B91CD84CA400B21F0E /* ThirdParty */,
 				B27A60B81CD84C3400B21F0E /* Supporting Files */,
@@ -120,6 +128,7 @@
 		B27A60C81CD84DC200B21F0E /* SideMenuVC */ = {
 			isa = PBXGroup;
 			children = (
+				B27A60A81CD84C1900B21F0E /* ViewController.swift */,
 				B27A60D21CD87DC000B21F0E /* MenuViewController.swift */,
 				B27A60D01CD87B5E00B21F0E /* SideMenuController.swift */,
 			);
@@ -131,6 +140,22 @@
 			children = (
 			);
 			name = Extension;
+			sourceTree = "<group>";
+		};
+		B27A60D71CD8841800B21F0E /* DoctorProfileVC */ = {
+			isa = PBXGroup;
+			children = (
+				B27A60D51CD8840A00B21F0E /* DoctorProfileViewController.swift */,
+			);
+			name = DoctorProfileVC;
+			sourceTree = "<group>";
+		};
+		B27A60D81CD8852500B21F0E /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				B27A60D91CD8855800B21F0E /* Engine.swift */,
+			);
+			name = Engine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,10 +231,13 @@
 			files = (
 				B27A60D11CD87B5E00B21F0E /* SideMenuController.swift in Sources */,
 				B27A60C61CD84D7900B21F0E /* NSArray+PureLayout.m in Sources */,
+				B27A60DE1CD890E400B21F0E /* BaseViewController.swift in Sources */,
 				B27A60C71CD84D7900B21F0E /* NSLayoutConstraint+PureLayout.m in Sources */,
 				B27A60D31CD87DC000B21F0E /* MenuViewController.swift in Sources */,
 				B27A60A91CD84C1900B21F0E /* ViewController.swift in Sources */,
+				B27A60D61CD8840A00B21F0E /* DoctorProfileViewController.swift in Sources */,
 				B27A60C51CD84D7900B21F0E /* ALView+PureLayout.m in Sources */,
+				B27A60DA1CD8855800B21F0E /* Engine.swift in Sources */,
 				B27A60A71CD84C1900B21F0E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

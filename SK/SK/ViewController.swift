@@ -15,7 +15,6 @@ class ViewController: UIViewController {
         
         //Setup navigation bar
         title = "Main ViewController"
-        
         self.view.backgroundColor = UIColor.whiteColor()
         
     }

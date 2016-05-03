@@ -13,12 +13,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        SideMenuController.menuButtonImage = UIImage(named: "MenuButton")
+        SideMenuController.menuButtonImage = UIImage(named: "menu")
         SideMenuController.presentationStyle = .UnderCenterPanelLeft
         SideMenuController.animationStyle = .CircleMaskAnimation
+        
+        let vc = DoctorProfileViewController()
+        let nav = UINavigationController(rootViewController: vc)
+        self.window?.rootViewController = nav
+        
         
         return true
     }
