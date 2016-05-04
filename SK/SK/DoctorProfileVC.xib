@@ -9,6 +9,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DoctorProfileVC" customModule="SK" customModuleProvider="target">
             <connections>
+                <outlet property="btnCall" destination="e6j-FY-U77" id="4fa-AM-7CC"/>
+                <outlet property="btnMessage" destination="FPO-c0-XvD" id="tCg-0V-EPn"/>
                 <outlet property="containerImageView" destination="bls-gg-Ygo" id="W4j-Ph-l0p"/>
                 <outlet property="imgAvatar" destination="jvA-rc-JUU" id="rqB-Vg-Ab9"/>
                 <outlet property="lblName" destination="ulp-3B-ZyB" id="cCn-n7-koP"/>
@@ -74,7 +76,57 @@
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ib-hY-hjw" userLabel="BaseButtonView">
                     <rect key="frame" x="0.0" y="532" width="600" height="68"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VoS-TW-tv3" userLabel="BaseButton1">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="68"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6j-FY-U77">
+                                    <rect key="frame" x="20" y="10" width="270" height="48"/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <state key="normal" title="Call Now">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="e6j-FY-U77" firstAttribute="top" secondItem="VoS-TW-tv3" secondAttribute="top" constant="10" id="5sK-gb-dSk"/>
+                                <constraint firstAttribute="trailing" secondItem="e6j-FY-U77" secondAttribute="trailing" constant="10" id="Mk7-Fg-RQd"/>
+                                <constraint firstAttribute="bottom" secondItem="e6j-FY-U77" secondAttribute="bottom" constant="10" id="O5r-FN-PBg"/>
+                                <constraint firstItem="e6j-FY-U77" firstAttribute="leading" secondItem="VoS-TW-tv3" secondAttribute="leading" constant="20" id="uyA-xp-jkK"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6F1-4Q-0Cb" userLabel="BaseButton2">
+                            <rect key="frame" x="300" y="0.0" width="300" height="68"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPO-c0-XvD">
+                                    <rect key="frame" x="10" y="10" width="270" height="48"/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <state key="normal" title="Message">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="FPO-c0-XvD" secondAttribute="trailing" constant="20" id="LN2-Bh-irR"/>
+                                <constraint firstItem="FPO-c0-XvD" firstAttribute="top" secondItem="6F1-4Q-0Cb" secondAttribute="top" constant="10" id="qxe-cN-Hgv"/>
+                                <constraint firstItem="FPO-c0-XvD" firstAttribute="leading" secondItem="6F1-4Q-0Cb" secondAttribute="leading" constant="10" id="rgb-fp-knm"/>
+                                <constraint firstAttribute="bottom" secondItem="FPO-c0-XvD" secondAttribute="bottom" constant="10" id="zhl-oj-O5U"/>
+                            </constraints>
+                        </view>
+                    </subviews>
                     <color key="backgroundColor" red="0.57392936944961548" green="0.81820940971374512" blue="0.31282910704612732" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="VoS-TW-tv3" secondAttribute="bottom" id="HVQ-n3-fXR"/>
+                        <constraint firstItem="VoS-TW-tv3" firstAttribute="width" secondItem="3Ib-hY-hjw" secondAttribute="width" multiplier="0.5" id="Ikl-g7-krT"/>
+                        <constraint firstItem="6F1-4Q-0Cb" firstAttribute="leading" secondItem="VoS-TW-tv3" secondAttribute="trailing" id="WvM-Yk-aao"/>
+                        <constraint firstAttribute="bottom" secondItem="6F1-4Q-0Cb" secondAttribute="bottom" id="fy7-Ni-fa8"/>
+                        <constraint firstAttribute="trailing" secondItem="6F1-4Q-0Cb" secondAttribute="trailing" id="j3i-Wf-vz8"/>
+                        <constraint firstItem="VoS-TW-tv3" firstAttribute="leading" secondItem="3Ib-hY-hjw" secondAttribute="leading" id="kLh-4C-SgM"/>
+                        <constraint firstItem="VoS-TW-tv3" firstAttribute="top" secondItem="3Ib-hY-hjw" secondAttribute="top" id="yR7-T0-nQj"/>
+                        <constraint firstItem="6F1-4Q-0Cb" firstAttribute="top" secondItem="3Ib-hY-hjw" secondAttribute="top" id="yau-EG-6Br"/>
+                    </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fIO-gL-PJw" userLabel="InforBaseView">
                     <rect key="frame" x="0.0" y="300" width="600" height="232"/>
@@ -255,6 +307,11 @@
             </constraints>
             <point key="canvasLocation" x="486" y="356"/>
         </view>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8Gh-34-M85">
+            <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <state key="normal" title="Button"/>
+        </button>
     </objects>
     <resources>
         <image name="avatar.png" width="200" height="200"/>

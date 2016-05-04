@@ -19,9 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         SideMenuController.presentationStyle = .UnderCenterPanelLeft
         SideMenuController.animationStyle = .CircleMaskAnimation
         
-        let vc = DoctorProfileVC()
-        let nav = UINavigationController(rootViewController: vc)
-        self.window?.rootViewController = nav
+        let vc = SideMenuController()
+        //let nav = UINavigationController(rootViewController: vc)
+        self.window?.rootViewController = vc
         
         
         return true

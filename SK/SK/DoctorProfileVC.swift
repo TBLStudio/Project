@@ -19,6 +19,10 @@ class DoctorProfileVC: BaseViewController {
     
     @IBOutlet var containerImageView: UIView!
     
+    @IBOutlet weak var btnCall: UIButton!
+    
+    @IBOutlet weak var btnMessage: UIButton!
+    
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: "DoctorProfileVC", bundle: nibBundleOrNil)
     }
@@ -51,7 +55,8 @@ class DoctorProfileVC: BaseViewController {
         imgAvatar.clipsToBounds = true
         imgAvatar.frame = containerImageView.bounds
         
-        
+        btnCall.layer.cornerRadius = 5
+        btnMessage.layer.cornerRadius = 5
         
     }
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B25DF3CF1CD9986D00D0EABD /* PrescriptionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25DF3CD1CD9986D00D0EABD /* PrescriptionsVC.swift */; };
+		B25DF3D01CD9986D00D0EABD /* PrescriptionsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B25DF3CE1CD9986D00D0EABD /* PrescriptionsVC.xib */; };
 		B27A60A71CD84C1900B21F0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27A60A61CD84C1900B21F0E /* AppDelegate.swift */; };
 		B27A60A91CD84C1900B21F0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27A60A81CD84C1900B21F0E /* ViewController.swift */; };
 		B27A60AC1CD84C1900B21F0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B27A60AA1CD84C1900B21F0E /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B25DF3CD1CD9986D00D0EABD /* PrescriptionsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrescriptionsVC.swift; sourceTree = "<group>"; };
+		B25DF3CE1CD9986D00D0EABD /* PrescriptionsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrescriptionsVC.xib; sourceTree = "<group>"; };
 		B27A60A31CD84C1900B21F0E /* SK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B27A60A61CD84C1900B21F0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B27A60A81CD84C1900B21F0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +70,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B25DF3CC1CD9982200D0EABD /* PreScriptionsVC */ = {
+			isa = PBXGroup;
+			children = (
+				B25DF3CD1CD9986D00D0EABD /* PrescriptionsVC.swift */,
+				B25DF3CE1CD9986D00D0EABD /* PrescriptionsVC.xib */,
+			);
+			name = PreScriptionsVC;
+			sourceTree = "<group>";
+		};
 		B27A609A1CD84C1900B21F0E = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +100,7 @@
 			children = (
 				B27A60A61CD84C1900B21F0E /* AppDelegate.swift */,
 				B27A60DD1CD890E400B21F0E /* BaseViewController.swift */,
+				B25DF3CC1CD9982200D0EABD /* PreScriptionsVC */,
 				B27A60D71CD8841800B21F0E /* DoctorProfileVC */,
 				B27A60C81CD84DC200B21F0E /* SideMenuVC */,
 				B27A60D81CD8852500B21F0E /* Engine */,
@@ -244,6 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B25DF3D01CD9986D00D0EABD /* PrescriptionsVC.xib in Resources */,
 				B2927DF71CD8E4CB004696F9 /* avatar.png in Resources */,
 				B27A60B11CD84C1900B21F0E /* LaunchScreen.storyboard in Resources */,
 				B2927DFB1CD8F1A9004696F9 /* DoctorProfileVC.xib in Resources */,
@@ -264,6 +279,7 @@
 				B27A60DE1CD890E400B21F0E /* BaseViewController.swift in Sources */,
 				B27A60C71CD84D7900B21F0E /* NSLayoutConstraint+PureLayout.m in Sources */,
 				B27A60D31CD87DC000B21F0E /* MenuViewController.swift in Sources */,
+				B25DF3CF1CD9986D00D0EABD /* PrescriptionsVC.swift in Sources */,
 				B27A60A91CD84C1900B21F0E /* ViewController.swift in Sources */,
 				B2927DFA1CD8F1A9004696F9 /* DoctorProfileVC.swift in Sources */,
 				B27A60C51CD84D7900B21F0E /* ALView+PureLayout.m in Sources */,
